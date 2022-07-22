@@ -26,7 +26,6 @@ todoBtn.addEventListener('click',() => {
 
 
 
-
 // helper functions
 function buildTextAndButton() {
   title.style.display = 'none';
@@ -39,7 +38,6 @@ function buildTextAndButton() {
   let list = document.createElement('ul');
   list.classList.add('list');
   confirmBtn.insertAdjacentElement('afterend', list);
-
 }
 
 
