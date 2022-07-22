@@ -15,13 +15,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(112, 110, 110);
+  background-color: #070707c7;
   font-family: 'Edu VIC WA NT Beginner', sans-serif;
 }
 
 .main-wrapper {
   border-radius: 40px;
-  background-color: rgb(125, 120, 199);
+  background-color: #7d78c7;
   height: 80%;
   width: 60%;
   display: flex;
@@ -29,7 +29,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  box-shadow: 10px 15px 30px rgba(0,0, 0, .2);
+  box-shadow: 10px 15px 30px #000000b4;
 }
 
 .title {
@@ -60,7 +60,9 @@ body {
   border: none;
   border-radius: 10px;
   padding: .5em 1em;
-  box-shadow: 0 5px 10px #383738b3
+  box-shadow: 0 5px 10px #383738b3;
+  position: absolute;
+  top: 20vh;
 }
 
 .input {
@@ -81,8 +83,16 @@ body {
   border:2px solid red;
 }
 
-
-
-
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #7d78c7;
+  height: 60%;
+  width: 80%;
+  position: absolute;
+  bottom: 1vh;
+  font-size: 20px;
+}
 
 
