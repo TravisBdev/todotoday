@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Roboto+Mono&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(112, 110, 110);
+  font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+.main-wrapper {
+  border-radius: 40px;
+  background-color: rgb(125, 120, 199);
+  height: 80%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  box-shadow: 10px 15px 30px rgba(0,0, 0, .2);
+}
+
+.title {
+  position: absolute;
+  top: 3vh;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.todo-btn {
+  font-family: 'Roboto Mono', monospace, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #b8b6b6;
+  border: none;
+  border-radius: 10px;
+  padding: .5em 1em;
+  box-shadow: 0 5px 10px #383738b3
+}
+
+.confirm-btn {
+  font-family: 'Roboto Mono', monospace, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #1dd42dc4;
+  border: none;
+  border-radius: 10px;
+  padding: .5em 1em;
+  box-shadow: 0 5px 10px #383738b3
+}
+
+.input {
+  font-family: 'Roboto Mono', monospace, sans-serif;
+  background-color: #b8b6c6;
+  position: absolute;
+  top: 10vh;
+  height: 4vh;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.input:focus {
+  outline: none !important;
+  border:2px solid red;
+}
+
+
+
+
+
+
