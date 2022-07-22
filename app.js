@@ -9,22 +9,19 @@ confirmBtn.style.display = 'none';
 
 // event listeners
 window.addEventListener('dblclick', (e) => {
-  let item = document.querySelector('.item');
-  if(e.target === item){
+  let item = document.querySelector('li');
+  if(e.target === item) {
     item.parentElement.remove(item);
   }
 })
-
-
-mainWrapper.addEventListener('click', (e) => {
-  if(e.target === todoBtn) {
-    buildTextAndButton();
-  }
-})
-
 confirmBtn.addEventListener('click', (e) => {
   addTodo();
 })
+
+todoBtn.addEventListener('click',() => {
+  buildTextAndButton()
+})
+
 
 
 
@@ -42,6 +39,7 @@ function buildTextAndButton() {
   let list = document.createElement('ul');
   list.classList.add('list');
   confirmBtn.insertAdjacentElement('afterend', list);
+
 }
 
 
